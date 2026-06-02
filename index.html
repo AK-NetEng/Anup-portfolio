@@ -1,11 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anup Kumar Singh | Digital Marketing Expert</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* Animated Background */
+
+body::before{
+content:'';
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,200,.15),transparent 30%),
+radial-gradient(circle at 80% 40%,rgba(0,150,255,.15),transparent 30%),
+radial-gradient(circle at 50% 80%,rgba(255,0,150,.15),transparent 30%);
+z-index:-1;
+animation:bgMove 15s infinite alternate;
+}
+
+@keyframes bgMove{
+100%{
+transform:scale(1.2);
+}
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:60px;
+}
+
+.logo h2{
+color:#00ffd5;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00ffd5;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px;
+}
+
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+border:5px solid #00ffd5;
+object-fit:cover;
+box-shadow:0 0 40px #00ffd5;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:60px;
+background:linear-gradient(90deg,#00ffd5,#00aaff,#ff00cc);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero h2{
+margin:15px 0;
+font-weight:400;
+color:#00ffd5;
+}
+
+.typing{
+font-size:22px;
+height:35px;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+border-radius:50px;
+background:#00ffd5;
+color:#000;
+font-weight:700;
+text-decoration:none;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* Sections */
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+font-size:40px;
+text-align:center;
+margin-bottom:50px;
+color:#00ffd5;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+/* Skills */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,255,213,.4);
+}
+
+.card h3{
+color:#00ffd5;
+margin-bottom:15px;
+}
+
+/* Projects */
+
+.project{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#00ffd5;
+text-decoration:none;
+}
+
+/* Footer */
+
+footer{
+padding:30px;
+text-align:center;
+background:#000;
+margin-top:50px;
+}
+
+</style>
 </head>
+
 <body>
-    
+
+<nav>
+<div class="logo">
+<img src="logo.png" alt="">
+<h2>ANUP</h2>
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<img src="profile.jpg" class="profile">
+
+<h1>Anup Kumar Singh</h1>
+
+<h2>Digital Marketing Expert</h2>
+
+<div class="typing" id="typing"></div>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+I am a Digital Marketing Professional specializing in SEO, Social Media Marketing, Lead Generation, Facebook Ads, Google Ads, WordPress Website Development, Content Marketing and Business Growth Strategies.
+
+My mission is to help businesses increase visibility, attract customers and generate consistent revenue through data-driven digital marketing campaigns.
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">My Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>SEO</h3>
+<p>On Page SEO, Off Page SEO, Technical SEO, Keyword Research.</p>
+</div>
+
+<div class="card">
+<h3>Social Media Marketing</h3>
+<p>Facebook, Instagram, LinkedIn and YouTube Growth.</p>
+</div>
+
+<div class="card">
+<h3>Paid Ads</h3>
+<p>Google Ads, Meta Ads, Conversion Optimization.</p>
+</div>
+
+<div class="card">
+<h3>WordPress Development</h3>
+<p>Business Websites, Landing Pages and Blog Websites.</p>
+</div>
+
+<div class="card">
+<h3>Content Marketing</h3>
+<p>SEO Content Writing and AI Content Creation.</p>
+</div>
+
+<div class="card">
+<h3>Lead Generation</h3>
+<p>Generating High Quality Leads for Businesses.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="project">
+<h3>SEO Growth Campaign</h3>
+<p>Improved rankings and organic traffic through SEO optimization.</p>
+</div>
+
+<div class="project">
+<h3>Facebook Ads Campaign</h3>
+<p>Generated targeted leads with Meta Ads strategies.</p>
+</div>
+
+<div class="project">
+<h3>Business Website</h3>
+<p>Created responsive WordPress websites for local businesses.</p>
+</div>
+
+<div class="project">
+<h3>Instagram Growth</h3>
+<p>Increased engagement and followers through content strategy.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+
+<p>Email: anup@example.com</p>
+
+<p>Phone: +91 XXXXXXXXXX</p>
+
+<br>
+
+<a href="#">LinkedIn</a> |
+<a href="#">Facebook</a> |
+<a href="#">Instagram</a> |
+<a href="#">WhatsApp</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Anup Kumar Singh | Digital Marketing Portfolio</p>
+
+</footer>
+
+<script>
+
+const texts=[
+"SEO Specialist",
+"Facebook Ads Expert",
+"WordPress Developer",
+"Lead Generation Expert",
+"Social Media Marketer"
+];
+
+let i=0;
+let j=0;
+let current="";
+let isDeleting=false;
+
+function type(){
+
+current=texts[i];
+
+if(isDeleting){
+j--;
+}else{
+j++;
+}
+
+document.getElementById("typing").textContent=current.substring(0,j);
+
+if(!isDeleting && j===current.length){
+isDeleting=true;
+setTimeout(type,1500);
+return;
+}
+
+if(isDeleting && j===0){
+isDeleting=false;
+i=(i+1)%texts.length;
+}
+
+setTimeout(type,isDeleting?50:100);
+
+}
+
+type();
+
+</script>
+
 </body>
 </html>
